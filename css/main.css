@@ -28,7 +28,7 @@ h2 {
     */
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    font-color: #050f09;
+    color: #050f09;
 }
 
 h3 {
@@ -37,7 +37,7 @@ h3 {
     */
     font-family: 'Asap', sans-serif;
     font-size: 18px;
-    font-color: #3d1814;
+    color: #3d1814;
 }
 
 h4, p, li {
@@ -48,7 +48,7 @@ h4, p, li {
     */
     font-family: 'Pontano Sans', sans-serif;
     font-size: 16px;
-    font-color: #1d5833;
+    color: #1d5833;
 }
 
 .arrow {
@@ -78,7 +78,7 @@ a:hover {
 
 .container {
     /* design the background for whole website */
-    background-color: #becc66;
+    background: #becc66;
     width: 1200px;
     display: block;
     margin: auto;  
@@ -246,8 +246,9 @@ nav ul li a {
 }
 
 #about p {
-    padding: 20px;
+    padding: 0 20px 0 20px;
     text-align: justify;
+    font-size: 19px;
 }
 
 #about li {
