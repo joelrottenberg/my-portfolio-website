@@ -71,7 +71,11 @@ a:hover {
 
 /***** SECTIONS *****/
 
-#work, #about {
+#work {
+    height: 1525px;
+}
+
+#about {
     height: 600px;
     /* header and contact has different height */
 }
@@ -183,7 +187,7 @@ nav ul li a {
 }
 
 #work .third-width { 
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 #work h2 { 
@@ -220,7 +224,7 @@ nav ul li a {
 /***** ABOUT *****/
 
 #about {
-    margin-top: 10px;    
+    margin: 10px auto;    
     background: -webkit-radial-gradient(#f3fef3, #fef6fa);
     background:    -moz-radial-gradient(#f3fef3, #fef6fa);
     background:         linear-radial-gradient(#f3fef3, #fef6fa);
@@ -248,12 +252,12 @@ nav ul li a {
 #about p {
     padding: 0 20px 0 20px;
     text-align: justify;
-    font-size: 19px;
+    font-size: 16px;
 }
 
 #about li {
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 15px;
 }
 
