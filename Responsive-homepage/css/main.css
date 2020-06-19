@@ -87,126 +87,160 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 * -------------------- Base Header - Footer Styles -------------------- */
 
-.content-wrapper {
-  display: flex;
-  justify-content: center;
-}
 header,
 footer {
   display: flex;
   justify-content: center;
   align-items: center;  
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 15px;
 }
 
 header .contant-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
 header .logo, .slogan {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+}
+
+header .slogan {
+  margin: 0;
 }
 
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 30px;
+  width: 100;
 }
 
-header h1 {
+footer {
+  flex-direction: column;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px;
+}
+
+footer .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-.hero-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#portfolio .figure h2,h3,h4,p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about .third-width {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about .skills {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-#about .history {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about .help {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .footer-content #contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .footer-content .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .footer-content .address {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer .copyright {
+  margin: 20px 0;
+}
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  margin: 10px;
+}
+
+#portfolio article {
+  width: 100%;
+  margin: 20px;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+#about .third-width {
+  width: 80%;
+}
+
+#about h2, h3, li {
+  width: 55%;
+}
+
+#about p {
+  width: 80%;
+}
+
+.cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.cv .credits h2 {
+  width: 55%;
+}
+
+.cv .credits h3, h4, p {
+  width: 80%;
+}
+
+.cv .experience li {
+  width: 80%;
+}
+
+.cv .skills li {
+  width: 55%;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 /* ==========================================================================
