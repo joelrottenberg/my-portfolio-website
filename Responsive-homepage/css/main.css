@@ -87,9 +87,57 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+@font-face{
+    font-family: 'Wisdom Script';
+    src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol, {
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+}
+
+p {
+
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
+   margin: 50px 0;
 }
 
 * -------------------- Base Header - Footer Styles -------------------- */
@@ -103,10 +151,13 @@ footer {
 }
 
 header {
-  padding: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  margin: 0;
 }
 
-header .contant-wrapper {
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,30 +173,69 @@ header .logo, .slogan {
 }
 
 header .slogan {
-  margin: 0;
+  margin: 20px;
+}
+
+.header-divider {  
+  background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+  margin: 20px;
 }
 
 header nav ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100;
+  padding: 0;
+}
+
+header nav ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+header .headline {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 footer {
+  display: flex;  
+  align-items: center;
+  text-align: center;
   flex-direction: column;
 }
 
+footer p {
+  margin: 0;
+}
+
 footer .content-wrapper {
-  width: 55%;
-  margin: 50px;
+  margin: 0;
+}
+
+footer .footer-content {
+  margin-bottom: 30px;
+}
+
+footer #contact {
+  margin-bottom: 50px;
+}
+
+footer #contact p {
+  display: flex;
+  flex-direction: column;
+  line-height: 35px;
 }
 
 footer .social-icons {
@@ -158,10 +248,22 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #027158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;  
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
+footer .address {
+  margin-top: 50px;
 }
 
 footer .copyright {
-  margin: 20px 0;
+  margin: 20px 0 50px 0;
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -169,56 +271,113 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(..//img/nathan-da-silva-k-rKfqSm4L4-unsplash.jp);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+
+.hero-area .content-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.hero-area h2, p {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.hero-area p {
+  margin-bottom: 0px;
+}
+
+/* Portfolio Area */
 
 #portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 10px;
+  margin: 0px;
 }
 
-#portfolio article {
-  width: 100%;
+#portfolio .content-wrapper {
   margin: 20px;
 }
 
-#portfolio img {
-  width: 100%;
+#portfolio article {
+  margin: 20px 20px 80px 20px;
 }
+
+#portfolio h3, h4, p {
+  text-align: center;
+}
+
+/* About Area */
 
 #about {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
 }
 
+#about .content-wrapper {
+  margin-top: 0;
+}
+
+/*
 #about .third-width {
   width: 80%;
 }
+*/
 
-#about h2, h3, li {
-  width: 55%;
+#about h2, h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
 }
 
 #about p {
+  text-align: left;
   width: 80%;
+  margin-bottom: 30px;
 }
+
+#about ul {
+  margin: 0 0 50px 30px;
+}
+
+/* -------------------- Mobile Styles - CV Page -------------------- */
 
 .cv {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  width: 100%;
+  flex-flow: row wrap;  
 }
 
+.cv .content-wrapper {
+  margin: 0;
+}
+
+.cv .experience {
+  margin-bottom: 30px;
+}
+
+.cv .download {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+/*
 .cv .credits h2 {
   width: 55%;
 }
@@ -234,6 +393,9 @@ footer .copyright {
 .cv .skills li {
   width: 55%;
 }
+*/
+
+/* -------------------- Mobile Styles - Credits Page -------------------- */
 
 .credits {
   display: flex;
@@ -241,6 +403,51 @@ footer .copyright {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+}
+
+.credits .content-wrapper {
+  margin: 0;
+}
+
+.credits .credit-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 30px;
+}
+
+.credits .credit-content p {
+  margin-bottom: 30px;
+}
+
+.credits .skillcrush {  
+  width: 100%
+}
+
+.credits .icons-content {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.credits p {
+  margin: 0;
+}
+
+.skillcrush {
+    font-family: 'Wisdom Script', cursive;
+    color: #ff7f7b;
+    font-weight: 100;
+}
+
+.first-letter {
+    font-size: 1.5em;
+}
+
+.shayhowe {
+    color: #a58b7c;
+    font-weight: 900;
 }
 
 /* ==========================================================================
@@ -331,8 +538,186 @@ footer .copyright {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 768px) {
+
+/*Tablet styles here*/
+
+.content-wrapper {
+  max-width: 640px;
+  margin: 100px 0;
+}
+
+/* Header */
+
+header .content-wrapper {  
+  flex-direction: column;
+  margin: 0;
+}
+
+header h2, h3 {
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+header nav {
+  width: 20%;
+}
+
+header nav ul {
+  justify-content: space-between;
+}
+
+.header-divider {
+  display: none;
+}
+
+/* Hero Area */
+
+.hero-area {
+}
+
+.hero-area h2 {
+  margin: 0 0 50px 0;
+}
+
+.hero-area p {
+  margin: 0;
+}
+
+.hero-area,.hero-content {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* Portfolio */
+
+#portfolio .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#portfolio article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 50%;
+  margin: 0;
+}
+
+#portfolio figure {
+  width: 100;
+  margin: 0;
+} 
+
+#portfolio .website-description {
+  width: 62%;
+}
+
+/* About */
+
+#about .content-wrapper {
+  padding-top: 20px;
+}
+
+.third-width .skills, .history-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third-width .skills {
+  width: 33%;
+}
+
+.third-width .history-content {
+  width: 66%;
+}
+
+.third-width .help-content {
+  width: 100%;
+}
+
+/* Footer */
+
+footer .content-wrapper {
+  width: 65%;
+  margin: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer #contact {
+  margin-bottom: 0;
+}
+
+footer .social-icons {
+  justify-content: space-between;
+}
+
+footer .copyright {
+  width: 100%;
+}
+
+/* ==========================================================================
+   CV Page
+   ========================================================================== */
+.cv .content-wrapper {
+  justify-content: space-between;
+}
+
+.cv .download {
+  text-align: center;
+}
+
+
+/* ==========================================================================
+   Credits Page
+   ========================================================================== */
+.credits .content-wrapper {
+  text-align: center;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+/*Desktop styles here*/
+
+.content-wrapper {
+  width: 960px;
+}
+
+
+
+.headline h1 {
+
+}
+
+/* Portfolio */
+#portfolio .content-wrapper {
+  justify-content: center;
+}
+
+#portfolio h2 {
+  width: 
+}
+
+#portfolio article {
+  flex-basis: 
+}
+
+
+
 }
 
 @media print,
