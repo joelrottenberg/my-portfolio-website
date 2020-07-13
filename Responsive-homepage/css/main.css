@@ -673,8 +673,12 @@ footer .copyright {
 /* ==========================================================================
    CV Page
    ========================================================================== */
-.cv .content-wrapper {
-  justify-content: space-between;
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 50px;
 }
 
 .cv .download {
