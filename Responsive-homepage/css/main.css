@@ -101,6 +101,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  line-height: 1.5;
 }
 
 ul,
@@ -136,44 +137,31 @@ figure {
 }
 
 .content-wrapper {
-  width: 90%;
-   margin: 50px 0;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 * -------------------- Base Header - Footer Styles -------------------- */
 
-header,
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  flex-flow: row wrap;
-}
 
 header {
-  display: flex;
-  justify-content: center;
   padding: 15px 0;
   margin: 0;
 }
 
-header .content-wrapper {
+.main-header .content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
-  margin: 0;
+  flex-wrap: wrap;
 }
 
 header .logo, .slogan {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 header .slogan {
-  margin: 20px;
+ 
 }
 
 .header-divider {  
@@ -183,25 +171,18 @@ header .slogan {
   margin: 10px 0 20px 0;
 }
 
-header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 20px;
+.main-nav ul {
+  text-align: center;
+  padding-left: 0;
 }
 
-header nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
+.main-nav li {
+  display: inline;
 }
 
-header nav ul li {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
+.main-nav a {
+  display: inline-block;
+  padding: .5em 1.5em;
 }
 
 header .headline {
@@ -252,6 +233,7 @@ footer .social-icons p {
   border-radius: 50%;
   width: 40px;
   height: 40px;  
+  margin: 2px;
 }
 
 footer .social-icons p i {
@@ -302,6 +284,14 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+#portfolio h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   margin: 0px;
 }
 
@@ -341,7 +331,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 #about p {
@@ -403,6 +393,10 @@ footer .copyright {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+}
+
+.credits p {
+  flex-basis: 
 }
 
 .credits .content-wrapper {
@@ -544,31 +538,40 @@ footer .copyright {
 
 .content-wrapper {
   max-width: 640px;
-  margin: 100px 0;
+  margin: 50px 0;
 }
 
 /* Header */
 
-header .content-wrapper {  
-  flex-direction: column;
-  margin: 0;
+.main-header .content-wrapper {
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+} 
+
+.main-header .logo-area {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
-header h2, h3 {
-  justify-content: flex-start;
+.main-header .logo {
   margin-bottom: 0;
 }
 
-header nav {
-  width: 20%;
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-header nav ul {
-  justify-content: space-between;
+.main-nav li {
+  margin: 2px;
 }
 
-.header-divider {
-  display: none;
+.main-nav a {
+  display: inline-block;
+  padding: .5em 1.5em;
 }
 
 /* Hero Area */
@@ -601,12 +604,15 @@ header nav ul {
   margin: 30px 0 0 0;
 }
 
-#portfolio article {
-  display: flex;  
+#portfolio .projects {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  width: 50%;
+  flex-flow: row wrap;
+}
+
+#portfolio article {
+  flex-basis: 45%; 
+  padding: 10px;  
   margin: 0;
 }
 
@@ -619,6 +625,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   margin: 40px 0 0 0;
+  height: 1.75em;
 }
 
 /* About */
@@ -678,7 +685,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  margin-top: 50px;
+  margin: 50px 0 0 0;
 }
 
 .cv .download {
@@ -703,23 +710,35 @@ footer .copyright {
   width: 960px;
 }
 
+.content-wrapper h2, h3 {
+  justify-content: flex-start;
+}
 
+.logo, .slogan {
+}
 
 .headline h1 {
 
 }
 
 /* Portfolio */
+
 #portfolio .content-wrapper {
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 #portfolio h2 {
   width: 
 }
 
+#portfolio .projects {
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+
 #portfolio article {
-  flex-basis: 
+  flex-basis: 30%; 
 }
 
 
