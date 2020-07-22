@@ -543,11 +543,16 @@ footer .copyright {
 
 /* Header */
 
-.main-header .content-wrapper {
-
+.main-header {
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 } 
+
+.main-header .content-wrapper {
+  padding: 0;
+  margin: 50px 0 0 0;
+}
 
 .main-header .logo-area {
   justify-content: flex-start;
@@ -555,24 +560,13 @@ footer .copyright {
   width: 50%;
 }
 
-.main-header .logo {
-  margin-bottom: 0;
-}
-
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 50%;
 }
 
-.main-nav li {
-  margin: 2px;
-}
-
-.main-nav a {
-  display: inline-block;
-  padding: .5em 1.5em;
-}
 
 /* Hero Area */
 
