@@ -142,7 +142,7 @@ figure {
   margin: 0 auto;
 }
 
-* -------------------- Base Header - Footer Styles -------------------- */
+/* -------------------- Base Header - Footer Styles -------------------- */
 
 
 header {
@@ -544,7 +544,8 @@ footer .copyright {
 /* Header */
 
 .main-header {
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 } 
@@ -560,13 +561,19 @@ footer .copyright {
   width: 50%;
 }
 
-.main-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+.main-nav {
   width: 50%;
 }
 
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  display: inline;
+}
+
+.main-nav li a {
+  padding: 5px;
+}
 
 /* Hero Area */
 
@@ -701,7 +708,7 @@ footer .copyright {
 /*Desktop styles here*/
 
 .content-wrapper {
-  width: 960px;
+  max-width: 960px;
 }
 
 .content-wrapper h2, h3 {
