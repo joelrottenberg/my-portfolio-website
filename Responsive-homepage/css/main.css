@@ -388,18 +388,26 @@ footer .copyright {
 /* -------------------- Mobile Styles - Credits Page -------------------- */
 
 .credits {
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   width: 100%;
 }
 
-.credits p h2 {
-}
-
 .credits .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   margin: 0;
 }
 
 .credits .credit-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   margin-bottom: 30px;
 }
 
@@ -693,7 +701,6 @@ footer .copyright {
    Credits Page
    ========================================================================== */
 .credits .content-wrapper {
-  text-align: center;
 }
 
 }
