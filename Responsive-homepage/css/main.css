@@ -388,15 +388,11 @@ footer .copyright {
 /* -------------------- Mobile Styles - Credits Page -------------------- */
 
 .credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
   width: 100%;
 }
 
-.credits p {
-  flex-basis: 
+.credits p h2 {
 }
 
 .credits .content-wrapper {
@@ -404,10 +400,6 @@ footer .copyright {
 }
 
 .credits .credit-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   margin-bottom: 30px;
 }
 
@@ -558,11 +550,14 @@ footer .copyright {
 .main-header .logo-area {
   justify-content: flex-start;
   flex-wrap: wrap;
-  width: 50%;
+  width: 40%;
+  padding: 5px;
 }
 
 .main-nav {
-  width: 50%;
+  width: 40%;
+  justify-content: flex-end;
+  padding:5px;
 }
 
 .main-nav ul {
