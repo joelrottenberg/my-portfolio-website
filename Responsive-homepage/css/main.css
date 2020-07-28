@@ -415,8 +415,13 @@ footer .copyright {
   margin-bottom: 30px;
 }
 
-.credits .skillcrush {  
-  width: 100%
+.credits .skillcrush {
+  font-family: 'Wisdom Script', cursive;
+  color: #ff7f7b;
+}
+
+.credits .skillcrush .first-letter .shayhowe .credit-logo {
+  flex-flow: column wrap;
 }
 
 .credits .icons-content {
@@ -426,13 +431,7 @@ footer .copyright {
 }
 
 .credits p {
-  margin: 0;
-}
-
-.skillcrush {
-    font-family: 'Wisdom Script', cursive;
-    color: #ff7f7b;
-    font-weight: 100;
+  margin: 0;  
 }
 
 .first-letter {
