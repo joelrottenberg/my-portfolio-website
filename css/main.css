@@ -1,402 +1,835 @@
-/***** BASE STYLES - (All styles is based) *****/
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
-/***** TYPOGRAPHY *****/
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* General Styles */
 
 @font-face{
     font-family: 'Wisdom Script';
     src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #2b2b2b;
-    text-align: center;
+html {
+  font-size: 16px;
 }
 
-h1 {
-    /*** header-description ***/
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 30px;
-   line-height: 15px;
-    font-weight: 700;
-    color: #a43937;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+ul,
+ol, {
+}
+
+a {
+  color: e2e3ed;
+  text-decoration: none;
 }
 
 h2 {
-    /*
-    logo, portfolio header, about header, contact header,
-    */
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    color: #050f09;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
 }
 
-h3 {
-    /*
-    sub-logo, 3 portfolio projects header, 2 about sub-headers, 3 contact headers,
-    */
-    font-family: 'Asap', sans-serif;
-    font-size: 18px;
-    color: #3d1814;
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
 }
 
-h4, p, li {
-    /*
-    h4 - 3 project subheaders, contact subheader
-    p - 3 work projects, about, 3 contact, 2 bottom
-    li - header nav, 2 about, contact social
-    */
-    font-family: 'Pontano Sans', sans-serif;
-    font-size: 16px;
-    color: #1d5833;
+p {
+
 }
 
-.arrow {
-    width: 36px;
+img {
+  width: 100%;
 }
 
-/***** LINKS *****/
-
-a {
-    /*
-    header nav, work projects, contact email, contact social, bottom arrow
-    */
-    text-decoration: none;
-    color: #356321;
+figure {
+  margin: 0;
 }
 
-a:hover {
-    color: #bc4e37;
+.content-wrapper {
+  max-width: 90%;
 }
 
-/***** SECTIONS *****/
+/* -------------------- Base Header - Footer Styles -------------------- */
 
-#work {
-    height: 1525px;
-}
-
-#about {
-    height: 600px;
-    /* header and contact has different height */
-}
-
-.container {
-    /* design the background for whole website */
-    background: #becc66;
-    width: 1200px;
-    display: block;
-    margin: auto;  
-}
-
-header,#work,#about,#contact,#bottom,.credits {
-    background: #fbfdfe;
-    width: 1190px;
-    display: block;
-    margin: auto;   
-}
-
-#work,#about,.credits {
-    border-radius: 5px;
-}
-    
-/***** GRID - (keep everything in line) *****/
-
-.full-width {
-    /* each section has 1 full width */
-    width: 1190px;
-    margin: 0 auto;
-}
-
-.half-width {
-    /* the header section has 2 half width (2 columns) */
-    width: 595px;
-    float: left;
-}
-    
-.third-width {
-    /* all sections with 3 coloumns has 3 third width (portfolio, about, contact) */
-    width: 396.6666666666667px;
-    float: left;  
-    margin: 4px;  
-    padding: 0 auto;
-}
-
-/***** HEADER *****/
 
 header {
-    height: 225px;
-    border-radius: 0 0 5px 5px;    
-    background: -webkit-radial-gradient(#f3fef3, #fef6fa);
-    background:    -moz-radial-gradient(#f3fef3, #fef6fa);
-    background:         linear-radial-gradient(#f3fef3, #fef6fa);
+  padding: 15px 0;
+  margin: 0;
 }
 
-.logo, .slogan { 
-    
-    text-align: left;
-    text-transform: uppercase;
+.main-header .content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
-.logo {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 20px;     
-    margin-top: 25px; 
-    padding: 15px 45px 0 45px;        
-    line-height: 1px;
+.logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  width: 100%;
 }
 
-.slogan {
-    font-size: 15px;
-    padding: 5px 45px;
+header .logo, .slogan {
 }
 
-nav {
-    float: right;
-    padding: 25px 35px 25px 25px;
+header .slogan {
+ 
 }
 
-nav ul li {
-    display: inline-block;
+.header-divider {  
+  background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
-nav ul li a {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-left: 20px;
-    font-size: 15px;
-    font-weight: 700;
+.main-nav ul {
+  text-align: center;
+  padding-left: 0;
 }
 
-.header-description {  
-    clear:both; 
-    padding-top: 25px;      
+.main-nav li {
+  display: inline;
 }
 
-/***** WORK *****/
-
-#work {
-    
-    margin-top: 10px;     
-    background: -webkit-radial-gradient(#f3fef3, #fef6fa);
-    background:    -moz-radial-gradient(#f3fef3, #fef6fa);
-    background:         linear-radial-gradient(#f3fef3, #fef6fa);
+.main-nav a {
+  display: inline-block;
+  padding: .5em 1.5em;
 }
 
-#work .full-width { 
-    padding: 25px 0;
+header .headline {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-#work .third-width { 
-    margin: 10px auto;
+footer {
+  display: flex;  
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
-#work h2 { 
-    margin-top: 0;
+footer p {
+  margin: 0;
 }
 
-#work h3 { 
-    margin: 10px auto;
+footer .content-wrapper {
+  margin: 0;
 }
 
-#work p {
-    margin: 0;
-    padding: 0 30px;
+footer .footer-content {
+  margin-bottom: 30px;
 }
 
-.projects {
-    width: 396.6666666666667px;
+footer #contact {
+  margin-bottom: 50px;
 }
 
-#work img {
-    width: 370px;
-    border: solid 2px #2e2d0f;
-    border-radius: 5px;
+footer #contact p {
+  display: flex;
+  flex-direction: column;
+  line-height: 35px;
 }
 
-#work .arrow {
-    margin-top: 10px;
-    width: 36px;
-    border: none;
-
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #027158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;  
+  margin: 2px;
+}
 
-/***** ABOUT *****/
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
+footer .address {
+  margin-top: 50px;
+}
+
+footer .copyright {
+  margin: 20px 0 50px 0;
+}
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
+
+.hero-area {
+  background: url(..//img/nathan-da-silva-k-rKfqSm4L4-unsplash.jp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.hero-area .content-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.hero-area h2, p {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.hero-area p {
+  margin-bottom: 0px;
+}
+
+/* Portfolio Area */
+
+#portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+#portfolio h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0px;
+}
+
+#portfolio .content-wrapper {
+  padding-bottom: 0; 
+}
+
+#portfolio article {
+  margin: 10px 10px 40px 10px;
+}
+
+#portfolio h3, h4, p {
+  text-align: center;
+}
+
+/* About Area */
 
 #about {
-    margin: 10px auto;    
-    background: -webkit-radial-gradient(#f3fef3, #fef6fa);
-    background:    -moz-radial-gradient(#f3fef3, #fef6fa);
-    background:         linear-radial-gradient(#f3fef3, #fef6fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-#about .full-width { 
-    padding: 15px 0;
+#about .content-wrapper {
+  margin-top: 0;
 }
 
-#about .third-width { 
-    margin: 0 auto;
+/*
+#about .third-width {
+  width: 80%;
 }
+*/
 
-#about .coding-screens {
-    width: 365px;
-    display: block;
-    margin: 0 auto;
-    padding: 50px 0 50px 0;
-}
-
-#about h3, h4 { 
-    padding: 0 20px;
+#about h2, h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0 0 20px 0;
 }
 
 #about p {
-    padding: 0 20px 0 20px;
-    text-align: justify;
-    font-size: 16px;
+  text-align: left;
+  width: 80%;
+  margin-bottom: 30px;
 }
 
-#about li {
-    text-align: left;
-    font-size: 16px;
-    padding: 0 15px;
+#about ul {
+  margin: 0 0 50px 30px;
 }
 
-#about .arrow {
-    padding-top: 110px;
+/* -------------------- Mobile Styles - CV Page -------------------- */
+
+.cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;  
 }
 
-/***** CONTACT *****/
-
-#contact, #bottom {    
-    background: -webkit-radial-gradient(#f3fef3, #fef6fa);
-    background:    -moz-radial-gradient(#f3fef3, #fef6fa);
-    background:         linear-radial-gradient(#f3fef3, #fef6fa);
+.cv .content-wrapper {
+  margin: 0;
 }
 
-#contact {
-    height: 400px;
-    margin-top: 10px;
-    border-radius: 5px 5px 0 0;
+.cv .experience {
+  margin-bottom: 30px;
 }
 
-#contact .full-width {
-    width: 1190px;
-    padding-top: 25px;
-}
-
-#contact h2 {
-    margin: 0;
-}
-
-#contact .third-width { 
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
+.cv .download {
+  text-align: center;
+  margin-top: 50px;
 }
 
 
-#contact .contact-me {
-    margin-top: 20px;
+/*
+.cv .credits h2 {
+  width: 55%;
 }
 
-#contact .contact-icon {
-    width: 36px;
-    margin: 5px;
-    padding-left: 0;
+.cv .credits h3, h4, p {
+  width: 80%;
 }
 
-#contact .phone-number {
-    padding: 0 5px 0 0;
+.cv .experience li {
+  width: 80%;
 }
 
-.uk-phones {
-    width: 250px;
-    border: 12px solid #e5e7b6;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 25px;
+.cv .skills li {
+  width: 55%;
 }
+*/
 
-#contact ul {
-    list-style: none;
-    padding: 0;
-}
-
-#contact ul li {
-    display: inline-block;  
-    padding: 3px;  
-}
-
-.icon {
-    width: 36px;  
-}
-
-#contact .social-media {
-    margin: 0;
-    padding: 20px 0 0 0;
-}
-
-/***** BOTTOM *****/
-
-#bottom {
-    margin-top: 0;
-    padding-top: 5px;
-}
-
-
-
-#bottom hr {
-    width: 500px;
-    margin: 20px auto;
-}
-
-#bottom p {
-    margin-bottom: 0;
-    padding-bottom: 3px;
-}
-
-#bottom .arrow {
-    padding-top: 0;
-}
+/* -------------------- Mobile Styles - Credits Page -------------------- */
 
 .credits {
-    
-    margin-top: 10px;       
-    background: -webkit-radial-gradient(#f3fef3, #fef6fa);
-    background:    -moz-radial-gradient(#f3fef3, #fef6fa);
-    background:         linear-radial-gradient(#f3fef3, #fef6fa);
+  width: 90%;
 }
 
-.credits .full-width { 
-    padding: 25px 0;
-    line-height: 45px;
+.credits .content-wrapper {
+  margin: 0;
+  padding: 0;
 }
 
-.credit-logo {
-    height: 12px;
+.credits .credit-content {
+  margin-bottom: 30px;
+}
+
+.credits .credit-content h2 {
+  text-align: center;
+}
+
+.credits .credit-content p {
+  margin-bottom: 30px;
+}
+
+.credits .skillcrush {
+  font-family: 'Wisdom Script', cursive;
+  color: #ff7f7b;
+}
+
+.credit-content .skillcrush .first-letter .shayhowe .credit-logo, span{
+  flex-flow: column wrap;
+}
+
+.credits .icons-content {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .credit-icons {
-    height: 20px;
-    padding: 0 20px;
+  width: 75%;
 }
 
-.credits hr {
-    width: 500px;
-    margin-top: 30px;
-}
-
-.skillcrush {
-    font-family: 'Wisdom Script', cursive;
-    color: #ff7f7b;
-    font-weight: 100;
+.credits p {
+  margin: 0;  
 }
 
 .first-letter {
-    font-size: 50px;
+    font-size: 1.5em;
 }
 
 .shayhowe {
     color: #a58b7c;
     font-weight: 900;
 }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+
+/*Tablet styles here*/
+
+.content-wrapper {
+  max-width: 640px;
+  margin: 50px 0;
+}
+
+/* Header */
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+} 
+
+.main-header .content-wrapper {
+  padding: 0;
+  margin: 50px 0 0 0;
+}
+
+.main-header .logo-area {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 40%;
+  padding: 5px;
+}
+
+.main-nav {
+  width: 40%;
+  justify-content: flex-end;
+  padding:5px;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  display: inline;
+}
+
+.main-nav li a {
+  padding: 5px;
+}
+
+/* Hero Area */
+
+.hero-area {
+}
+
+.hero-area h2 {
+  margin: 0 0 50px 0;
+}
+
+.hero-area p {
+  margin: 0;
+}
+
+.hero-area,.hero-content {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* Portfolio */
+
+#portfolio .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 30px 0 0 0;
+}
+
+#portfolio .projects {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#portfolio article {
+  flex-basis: 45%; 
+  padding: 10px;  
+  margin: 0;
+}
+
+#portfolio figure {
+  width: 100;
+  margin: 30px 0 0 0;
+} 
+
+#portfolio h2,h3 {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0 0;
+  height: 1.75em;
+}
+
+/* About */
+
+#about .content-wrapper {
+  margin: 50px 0 0 0;
+}
+
+.third-width .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 33%;
+}
+
+#about ul {
+  margin-top: 30px;
+}
+.third-width .history-content, .help-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#about p {
+  margin: 20px 0 0 0;
+}
+
+/* Footer */
+
+footer .content-wrapper {
+  margin-top: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons p {
+  margin: 5px;
+  padding: 5px;
+}
+
+footer .copyright {
+  width: 100%;
+}
+
+/* ==========================================================================
+   CV Page
+   ========================================================================== */
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: 50px 0 0 0;
+}
+
+.cv .download {
+  text-align: center;
+}
+
+
+/* ==========================================================================
+   Credits Page
+   ========================================================================== */
+.credits .content-wrapper {
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+/*Desktop styles here*/
+
+.content-wrapper {
+  max-width: 960px;
+}
+
+.content-wrapper h2, h3 {
+  justify-content: flex-start;
+}
+
+.logo, .slogan {
+}
+
+.headline h1 {
+
+}
+
+/* Portfolio */
+
+#portfolio .content-wrapper {
+  justify-content: space-around;
+  width: 100%;
+}
+
+#portfolio h2 {
+  width: 
+}
+
+#portfolio .projects {
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+
+#portfolio article {
+  flex-basis: 30%; 
+}
+
+
+
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
