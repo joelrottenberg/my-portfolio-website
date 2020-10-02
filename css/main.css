@@ -948,6 +948,11 @@ p, li {
 .main-nav li a {
 }
 
+.headline {
+  display: flex;
+  width: 50%;
+}
+
 /* Services */
 
 #services {
