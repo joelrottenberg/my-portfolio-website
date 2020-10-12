@@ -230,7 +230,7 @@ header .content-wrapper {
 }
 
 .menu-icon {
-  font-size: 2.4em;
+  font-size: 2em;
   color: #fff;
   line-height: 50px;
 }
@@ -250,7 +250,7 @@ nav {
   background-color: #3d4852;
   top: 70px;
   left: 0;
-  width: 100%;
+  width: 50%;
 }
 
 nav ul {
@@ -275,11 +275,6 @@ nav ul li a {
 
 nav ul li a:hover, nav ul li a:focus {
   color: #eb6f4a;
-}
-
-.headline {
-  justify-content: center;
-  align-items: center;
 }
 
 .headline-content {
@@ -949,8 +944,6 @@ p, li {
 }
 
 .headline {
-  display: flex;
-  width: 50%;
 }
 
 /* Services */
