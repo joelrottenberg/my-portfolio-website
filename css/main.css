@@ -151,26 +151,14 @@ img {
 figure {
 	margin: 0;
 }
- 
-address {
- font-style: normal;
-}
 
 button {
-  margin: 20px;
-  padding: 10px;
-  border-radius: 5px;
+  display: none;
 }
+ 
 
-.btn {
-  color: #212529;
-  text-transform: uppercase;
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-.btn:hover {
-  color: #3d735f;
+address {
+ font-style: normal;
 }
 
 hr {
@@ -482,13 +470,6 @@ footer hr {
   padding: 20px;
 }
 
-#portfolio .projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
-
 #portfolio article {
 	padding: 0 10px;
 	margin: 10px;
@@ -557,7 +538,7 @@ footer hr {
   background-size: cover;
   background-position: center;
   padding: 15px 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   color: #fff;
 }
 
@@ -592,7 +573,7 @@ footer hr {
   align-items: center;
   flex-flow: row wrap;
   width: 90%;
-  margin: 0;
+  margin-bottom: 50px;
   padding: 20px;
   padding-bottom: 0;
 }
@@ -909,6 +890,25 @@ h2 {
 
 p, li {
 	font-size: 1.3em;
+}
+
+
+button {
+  display: block;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  color: #212529;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.btn:hover {
+  color: #3d735f;
 }
 
 .content-wrapper {
