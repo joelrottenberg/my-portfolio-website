@@ -1464,6 +1464,39 @@ nav ul li a {
   text-align: left;
 }
 
+
+
+/* -------------------- Mobile Styles - CV Page -------------------- */
+
+.cv .content-wrapper {
+  display: flex;
+  flex-flow: column;
+}
+
+.cv h2, h3, h4 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.cv ul {
+  margin: 0;
+}
+
+.cv li {
+  font-size: .75em;
+}
+
+.cv .skills {
+  margin: 0;
+}
+
+.cv .skills ul {
+  padding: 0;
+}
+
+/* -------------------- Mobile Styles - Credits Page -------------------- */
+
+
 .source-1 a,.source-2 a,.source-3 a,.source-4 a {
   display: unset;
 }
