@@ -684,6 +684,10 @@ footer hr {
   margin-top: 50px;
 }
 
+.cv button {
+  display: block;
+}
+
 .cv a, i {
   color: #000;
 }
