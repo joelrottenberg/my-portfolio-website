@@ -433,7 +433,7 @@ footer hr {
   align-items: center;
   flex-flow: row wrap;
   background-color: #fff;
-	width: 90%;
+	width: 80%;
   margin: 0;
 }
 
@@ -447,7 +447,7 @@ footer hr {
 }
 
 #portfolio a {
-  color: #fff;
+  color: #000;
 }
 
 #portfolio p {
@@ -455,15 +455,34 @@ footer hr {
   padding: 20px;
 }
 
-#portfolio article {
-	padding: 0 10px;
-	margin: 10px;
-  border-radius: 5px;
-  min-height: 325px;
+#portfolio article {	
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-basis: ; 
+  border: solid 2px #9a9797;
+  box-shadow: 1px 2px 2px #000;
+  text-shadow: 2px 2px 2px #fff;
+  border-radius: 5px; 
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+#portfolio article a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
 }
 
 #portfolio .job-1 {
-  background: linear-gradient(to bottom, rgba(22, 77, 66, 0.7) 0%, rgba(22, 77, 66, 0.7) 100%), url(../img/project-jubilee-thumbnail.png);
+  /*background: linear-gradient(to bottom, rgba(22, 77, 66, 0.7) 0%, rgba(22, 77, 66, 0.7) 100%), */
+  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-jubilee-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -471,7 +490,7 @@ footer hr {
 }
 
 #portfolio .job-2 {
-  background: linear-gradient(to bottom, rgba(22, 77, 66, 0.7) 0%, rgba(22, 77, 66, 0.7) 100%), url(../img/project-holstee-thumbnail.png);
+  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-holstee-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -479,7 +498,7 @@ footer hr {
 }
 
 #portfolio .job-3 {
-  background: linear-gradient(to bottom, rgba(22, 77, 66, 0.7) 0%, rgba(22, 77, 66, 0.7) 100%), url(../img/project-rogue-pickings-thumbnail.png);
+  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-rogue-pickings-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -487,7 +506,7 @@ footer hr {
 }
 
 #portfolio .job-4 {
-  background: linear-gradient(to bottom, rgba(22, 77, 66, 0.7) 0%, rgba(22, 77, 66, 0.7) 100%), url(../img/project-unplugged-thumbnail.png);
+  background: radial-gradient(rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-unplugged-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -495,7 +514,7 @@ footer hr {
 }
 
 #portfolio .job-5 {
-  background: linear-gradient(to bottom, rgba(22, 77, 66, 0.7) 0%, rgba(22, 77, 66, 0.7) 100%), url(../img/project-lolcat-thumbnail.png);
+  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-lolcat-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -503,7 +522,7 @@ footer hr {
 }
 
 #portfolio .job-6 {
-  background: linear-gradient(to bottom, rgba(22, 77, 66, 0.7) 0%, rgba(22, 77, 66, 0.7) 100%), url(../img/project-magic-8-ball-thumbnail.png);
+  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-magic-8-ball-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -511,7 +530,7 @@ footer hr {
 }
 
 #portfolio .job-7 {
-  background: linear-gradient(to bottom, rgba(22, 77, 66, 0.7) 0%, rgba(22, 77, 66, 0.7) 100%), url(../img/project-election-map-thumbnail.png);
+  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-election-map-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -519,7 +538,7 @@ footer hr {
 }
 
 #portfolio .job-8 {
-  background: linear-gradient(to bottom, rgba(22, 77, 66, 0.7) 0%, rgba(22, 77, 66, 0.7) 100%), url(../img/project-recipe-thumbnail.png);
+  background: radial-gradient(rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-recipe-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -777,6 +796,47 @@ footer hr {
   margin: 10px;
 }
 
+/* Ad banners */
+
+.affiliates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.affiliates .content-wrapper {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.affiliates .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.affiliates article {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border-radius: 5px
+  margin: 10px;
+  padding: 10px;
+}
+
+.affiliates img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1023,7 +1083,6 @@ footer .social-icons p {
   align-items: center;
   flex-flow: row wrap;
   flex-basis: 45%; 
-  height: 450px;
   margin: 10px;
   padding: 20px;
 }
@@ -1195,6 +1254,31 @@ footer .social-icons p {
 
 .credits img {
   width: 15%;
+}
+
+
+
+/* Affiliates */
+
+.affiliates .content-wrapper {
+  margin: 40px 0;
+}
+
+#portfolio .projects {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+
+.affiliates article {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-basis: 45%; 
+  margin: 10px;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1395,7 +1479,7 @@ nav ul li a {
 }
 
 #portfolio article {
-	flex-basis: 30%;
+	flex-basis: 20%;
   background-color: #f5f2f2;
   border-style: solid;
   border-width: .5px;
@@ -1516,6 +1600,25 @@ nav ul li a {
 .source-1 a,.source-2 a,.source-3 a,.source-4 a {
   display: unset;
 }
+
+.affiliates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.affiliates .content-wrapper {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.affiliates article {
+  flex-basis: 20%; 
+  padding: 30px;
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
