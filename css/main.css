@@ -1601,22 +1601,9 @@ nav ul li a {
   display: unset;
 }
 
-.affiliates {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.affiliates .content-wrapper {  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .affiliates article {
   flex-basis: 20%; 
-  padding: 30px;
+  padding: 10px;
 }
 
 
