@@ -466,7 +466,7 @@ footer hr {
   text-shadow: 2px 2px 2px #fff;
   border-radius: 5px; 
   height: 100px;
-  margin: 10px;
+  margin: 40px auto;
   padding: 20px;
   position: relative;
 }
@@ -481,8 +481,8 @@ footer hr {
 }
 
 #portfolio .job-1 {
-  /*background: linear-gradient(to bottom, rgba(22, 77, 66, 0.7) 0%, rgba(22, 77, 66, 0.7) 100%), */
-  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-jubilee-thumbnail.png);
+  /*background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), */
+  background: url(../img/project-jubilee-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -490,7 +490,7 @@ footer hr {
 }
 
 #portfolio .job-2 {
-  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-holstee-thumbnail.png);
+  background: url(../img/project-holstee-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -498,7 +498,7 @@ footer hr {
 }
 
 #portfolio .job-3 {
-  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-rogue-pickings-thumbnail.png);
+  background: url(../img/project-rogue-pickings-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -506,7 +506,7 @@ footer hr {
 }
 
 #portfolio .job-4 {
-  background: radial-gradient(rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-unplugged-thumbnail.png);
+  background: url(../img/project-unplugged-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -514,7 +514,7 @@ footer hr {
 }
 
 #portfolio .job-5 {
-  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-lolcat-thumbnail.png);
+  background: url(../img/project-lolcat-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -522,7 +522,7 @@ footer hr {
 }
 
 #portfolio .job-6 {
-  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-magic-8-ball-thumbnail.png);
+  background: url(../img/project-magic-8-ball-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -530,7 +530,7 @@ footer hr {
 }
 
 #portfolio .job-7 {
-  background: radial-gradient(circle, rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-election-map-thumbnail.png);
+  background: url(../img/project-election-map-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
@@ -538,7 +538,7 @@ footer hr {
 }
 
 #portfolio .job-8 {
-  background: radial-gradient(rgba(201,201,203,1) 0%, rgba(234,238,238,0.31416316526610644) 50%), url(../img/project-recipe-thumbnail.png);
+  background: url(../img/project-recipe-thumbnail.png);
   background-size: cover;
   background-position: center;
   padding: 15px 0;
