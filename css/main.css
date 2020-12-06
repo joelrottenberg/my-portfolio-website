@@ -672,30 +672,26 @@ footer hr {
   margin: 40px 0;
 }
 
-.cv .content-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-	margin: 0;
-}
-
-.cv .experience {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
-}
-
 .cv h3 {
-	text-align: center;
-	margin: 10px;
+  text-align: center;
+  margin: 50px 10px 10px 10px;
+}
+
+.cv h4 {
+  text-align: center;
+  color: #adaaa0;
+  margin: 10px;
+}
+
+.cv p {
+  margin: 20px auto;
+  font-size: 1em;
 }
 
 .cv ul {
-	list-style-type: square;
-	padding: 20px 10px;
-	margin: 20px 0;
+  list-style-type: square;
+  padding: 0;
+  margin: 20px;
 }
 
 .cv .download {
@@ -715,13 +711,23 @@ footer hr {
   padding: 20px;
 }
 
-.cv .download a::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: ' ';
+.cv .content-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	margin: 0;
+}
+
+.cv .experience {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
+
+.cv .skills {
+  margin: 20px;
 }
 
 /* -------------------- Mobile Styles - Credits Page -------------------- */
@@ -1230,17 +1236,15 @@ footer .social-icons p {
 /* ==========================================================================
    CV Page
    ========================================================================== */
-.cv .skills {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: column;
-  margin: 50px 0 0 0;
+
+.cv p, li {
+  font-size: 1.2em;
 }
 
-.cv .download {
-  text-align: center;
+.cv .skills {
+  margin: 50px auto;
 }
+
 
 /* ==========================================================================
    Credits Page
@@ -1585,7 +1589,6 @@ nav ul li a {
 .cv h4 {
   font-size: .75em;
   margin: 0;
-  color: #adaaa0;
 }
 
 .cv ul {
