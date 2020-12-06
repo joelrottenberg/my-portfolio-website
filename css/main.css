@@ -715,6 +715,15 @@ footer hr {
   padding: 20px;
 }
 
+.cv .download a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+}
+
 /* -------------------- Mobile Styles - Credits Page -------------------- */
 
 .credits {
@@ -1568,30 +1577,50 @@ nav ul li a {
 
 /* -------------------- Mobile Styles - CV Page -------------------- */
 
-.cv .content-wrapper {
-  display: flex;
-  flex-flow: column;
-}
-
-.cv h2, h3, h4 {
+.cv h2, h3 {
   font-size: 1em;
   margin: 0;
 }
 
-.cv ul {
+.cv h4 {
+  font-size: .75em;
   margin: 0;
+  color: #adaaa0;
 }
 
-.cv li {
+.cv ul {
+  margin: 10px;
+  padding: 0;
+}
+
+.cv p, li {
   font-size: .75em;
+  text-align: left;
+}
+
+.cv .cv-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+.cv .experience {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;   
+  width: 75%;
 }
 
 .cv .skills {
+  display: flex;
+  flex-flow: column;
   margin: 0;
 }
 
-.cv .skills ul {
-  padding: 0;
+.cv button i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* -------------------- Mobile Styles - Credits Page -------------------- */
