@@ -1581,6 +1581,11 @@ nav ul li a {
 
 /* -------------------- Mobile Styles - CV Page -------------------- */
 
+.cv .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .cv h2, h3 {
   font-size: 1em;
   margin: 0;
@@ -1603,21 +1608,21 @@ nav ul li a {
 
 .cv .cv-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-
 }
 .cv .experience {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;   
-  width: 75%;
+  width: 55%;
+  margin: 30px;
 }
 
 .cv .skills {
   display: flex;
   flex-flow: column;
-  margin: 0;
+  margin: 30px;
 }
 
 .cv button i {
